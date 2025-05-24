@@ -247,7 +247,7 @@ def dockerDeploy(envDeploy, port) {
                 catch(err) {
                     echo "Error caught: $err"
                 }
-                sh "sshpass -p '$PASSWORD' -v ssh -o StrictHostKeyChecking=no $USERNAME@$docker_vm_ip \"docker run --restart always --name ${APPLICATION_NAME}-$envDeploy -p $port:8761 -d ${env.DOCKER_HUB}/${env.APPLICATION_NAME}:$GIT_COMMIT\""
+                sh "sshpass -p '$PASSWORD' -v ssh -o StrictHostKeyChecking=no $USERNAME@$docker_vm_ip \"docker run --restart always --name ${APPLICATION_NAME}-$envDeploy -p $port:8132 -d ${env.DOCKER_HUB}/${env.APPLICATION_NAME}:$GIT_COMMIT\""
             }
         }
 
