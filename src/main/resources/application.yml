@@ -46,4 +46,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-dev.i27academy.in/eureka/
+      defaultZone: http://35.199.59.180:5761/eureka/
