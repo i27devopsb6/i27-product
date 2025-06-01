@@ -2,6 +2,6 @@ fullname: i27-product
 replicas:
   default: 1
 image: 
-  name: docker.io/i27devopsb6/product
+  name: devopsb6.jfrog.io/cart-docker-docker/product
   tag: random
 targetPort: 8132
