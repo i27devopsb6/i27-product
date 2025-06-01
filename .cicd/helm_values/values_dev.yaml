@@ -5,3 +5,5 @@ image:
   name: devopsb6.jfrog.io/cart-docker-docker/product
   tag: random
 targetPort: 8132
+service:
+  type: NodePort
